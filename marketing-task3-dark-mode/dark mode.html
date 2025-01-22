@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated On/Off Switch</title>
+    <link rel="stylesheet" href="dark mode.css" />
+  </head>
+  <body>
+    <h1 id="title">Toggle Background Color</h1>
+
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" onclick="toggleBackground()" />
+        <span class="slider">
+          <span class="off-icon">🌞</span>
+          <span class="on-icon">🌜</span>
+        </span>
+      </label>
+      <span id="toggleLabel" class="label-text">Light</span>
+    </div>
+
+    <script>
+      function toggleBackground() {
+        var checkBox = document.getElementById("toggleSwitch");
+        var label = document.getElementById("toggleLabel");
+        var title = document.getElementById("title");
+
+        if (checkBox.checked) {
+          document.body.style.backgroundColor = "#333";
+          title.style.color = "#fff";
+          label.style.color = "#fff";
+          label.textContent = "Dark";
+        } else {
+            document.body.style.backgroundColor = "#fff";
+            title.style.color = "#333";
+            label.style.color = "#333";
+          label.textContent = "Light";
+        }
+      }
+    </script>
+  </body>
+</html>
