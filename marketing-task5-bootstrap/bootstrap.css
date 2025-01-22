@@ -1,0 +1,216 @@
+html {
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: url('fonts/franklin-gothic-medium.woff2') format('woff2'),
+       url('fonts/franklin-gothic-medium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, 
+  sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo-title{
+  font-family:"Franklin Gothic Medium" ;
+  font-size: 3rem;
+  font-weight: 700; 
+  color: #333;
+  text-align: center; 
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-banner {
+  width: 100% !important;
+  height: 500px !important;
+}
+
+.banner {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  background-image: url(./service-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+
+.bg-color {
+    background-color: rgb(113, 196, 252) !important;
+}
+
+.banner-text {
+    background-color: #6c757d;
+    width: 40vw;
+  border-radius: 10px;
+  padding: 15px;
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+}
+
+.img-banner :hover{
+  cursor: pointer;
+
+}
+
+.contact-banner {
+    margin: 25px 0;
+}
+
+.contact-banner p {
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.btn-banner {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6c757d;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-banner:hover {
+    background-color: #99a7b3;
+}
+
+.txt-spin {
+    background-color: #6c757d;
+    margin: 100px 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(113, 196, 252);
+  font-size: 15px;
+}
+
+.txt-spin h1 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.card {
+  text-align: center;
+  position: relative;
+    background-color: #fff; 
+  
+  }
+
+
+.card::after,
+.card::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.card::before {
+  width: 130%;
+  padding-bottom: 130%;
+  background-color: #fdf2e9;
+  top: 50%;
+  left: 50%;
+  z-index: -2;
+}
+
+.card::after {
+  width: 110%;
+  padding-bottom: 110%;
+  background-color: #fae5d3;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.card-img-top:hover {
+  cursor: pointer;
+  transform: scale(1.03); 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+  @media (max-width: 799.99px) {
+    .logo-title {
+        font-size: 2rem;
+}
+  .main-banner {
+    height: 300px !important;
+  }
+}
+
+.footer {
+  background: linear-gradient(236deg, rgb(123, 196, 252), rgb(95, 97, 96)); 
+  color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+
+.social-media a {
+  font-size: 18px;
+  color: #00aaff;
+  margin-right: 15px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+
+.footer hr {
+  border-top: 2px solid #f8f9fa;
+  margin: 20px 0;
+}
